@@ -1,0 +1,196 @@
+/* =============================
+   COFFEE STATION – ESTILO BASE
+   Sustentável, aconchegante e moderno
+   ============================= */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5efe6; /* bege claro */
+  color: #3e2c23; /* marrom suave */
+}
+
+/* ===== CABEÇALHO ===== */
+.coffee-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #5a3825, #3e2c23);
+  color: #fff;
+  border-bottom: 2px solid #d4b996;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.coffee-header h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.coffee-header p {
+  color: #f5efe6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.coffee-header nav a {
+  color: #f5efe6;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.coffee-header nav a:hover,
+.coffee-header nav a.ativo {
+  color: #fff;
+  border-bottom: 2px solid #f5efe6;
+  padding-bottom: 2px;
+}
+
+/* ===== SEÇÃO DE CONTATO ===== */
+.coffee-contato {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.coffee-contato h2 {
+  color: #5a3825;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.coffee-contato p {
+  color: #6b4f3b;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.coffee-form {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  background-color: #f5efe6;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(90, 56, 37, 0.2);
+}
+
+.coffee-campo {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.coffee-campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #3e2c23;
+}
+
+.coffee-campo input,
+.coffee-campo textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d4b996;
+  border-radius: 8px;
+  background: #fff;
+  color: #3e2c23;
+  font-size: 15px;
+}
+
+.coffee-campo input:focus,
+.coffee-campo textarea:focus {
+  outline: 2px solid #9c6f46;
+}
+
+/* ===== BOTÃO ===== */
+.coffee-botao {
+  background-color: #5a3825;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coffee-botao:hover {
+  background-color: #3e2c23;
+}
+
+/* ===== CONTATOS EXTRAS ===== */
+.coffee-contatos-extras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.coffee-info {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(90, 56, 37, 0.2);
+}
+
+.coffee-info:hover {
+  background: #f5efe6;
+}
+
+.coffee-info i {
+  font-size: 25px;
+  color: #5a3825;
+  margin-bottom: 10px;
+}
+
+.coffee-info p {
+  color: #3e2c23;
+  font-size: 16px;
+}
+
+/* ===== MAPA ===== */
+.coffee-mapa {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  border: 2px solid #d4b996;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ===== RODAPÉ ===== */
+.coffee-footer {
+  background-color: #3e2c23;
+  text-align: center;
+  padding: 20px;
+  color: #f5efe6;
+  font-size: 14px;
+  border-top: 2px solid #d4b996;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .coffee-form {
+    padding: 25px;
+  }
+
+  .coffee-contatos-extras {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-info {
+    width: 90%;
+  }
+
+  .coffee-header h1 {
+    font-size: 28px;
+  }
+}
