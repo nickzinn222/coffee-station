@@ -34,13 +34,24 @@ header img:hover {
   transform: scale(1.05); /* leve efeito */
 }
 
+.logo img{
+  border-bottom: black solid 1px;
+  padding: 0;
+}
+
+.colher{
+  width: 20%;
+ height: auto;
+}
+
 /* Menu */
 nav ul {
+  border-bottom: black solid 1px;
   list-style: none;
   display: flex;
   gap: 2rem;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
 nav a {
@@ -56,12 +67,6 @@ nav a:hover,
 nav a.active {
   color: #ffffff;
   background-color: #b37a4c; /* marrom caramelo */
-}
-
-.colher01 img {
-   width: 100%;
- height: 30vh;
- 
 }
 
 /* HERO */
