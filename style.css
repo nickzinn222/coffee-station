@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* ====================== HEADER ====================== */
 header {
   width: 100%;
   padding: 1rem 5%;
@@ -31,27 +31,38 @@ header {
   z-index: 100;
 }
 
+/* Logo */
 header img {
-  height: 12rem;
+  height: 9rem; /* proporcional */
 }
 
+header img:hover {
+  transform: scale(1.05); /* leve efeito */
+}
+
+/* Menu */
 nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #6a4b3c; /* marrom médio */
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-nav a:hover {
-  color: #b37a4c; /* marrom caramelo */
+nav a:hover,
+nav a.active {
+  color: #ffffff;
+  background-color: #b37a4c; /* marrom caramelo */
 }
-
 /* HERO */
 .hero {
   display: grid;
@@ -63,6 +74,7 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 .hero-text h1 {
@@ -96,50 +108,62 @@ nav a:hover {
   width: 100%;
 }
 
-/* CATEGORIAS */
+/* ===== CATEGORIAS ===== */
 .categorias {
-  background: #ffffff;
+  padding: 4rem 2rem;
   text-align: center;
-  padding: 4rem 8%;
+  background-color: #f5efe6; /* bege claro de fundo */
+  color: #4a2c2a; /* marrom escuro */
 }
 
 .categorias h2 {
-  color: #5a3825;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  color: #3b1f1a; /* marrom mais escuro para destaque */
+  font-weight: 600;
 }
 
+/* ===== GRID ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
+/* ===== CARD ===== */
 .card {
-  background: #f7f3ee;
-  border-radius: 18px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  transition: transform 0.3s;
+  background: #fff; /* branco para contraste */
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(74, 44, 42, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #d3b692; /* bege suave na borda */
 }
 
 .card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(74, 44, 42, 0.25);
 }
 
+/* ===== IMAGENS ===== */
 .card img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
+.card:hover img {
+  transform: scale(1.05); /* zoom suave no hover */
+}
+
+/* ===== TEXTO ===== */
 .card p {
-  font-weight: 600;
-  color: #5a3825;
-}
-
-.coffe {
-
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #4a2c2a; /* marrom escuro */
+  font-weight: 500;
 }
 
 /* BANNER SECUNDÁRIO */
@@ -226,11 +250,23 @@ nav a:hover {
   font-weight: 500;
 }
 
+.coffe01{
+ width: 100%;
+ height: 42vh;
+ }
+ .cofee22{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+ 
+ }
+
 /* FOOTER */
 footer {
   background-color: #5a3825;
   color: #ffffff;
   padding: 3rem 8% 2rem;
+  border-top: #5a3825 solid 1px;
 }
 
 .footer-container {
@@ -287,11 +323,12 @@ footer {
   color: #eee0d0;
 }
 
-/* RESPONSIVO */
+/* ====================== RESPONSIVO ====================== */
 @media (max-width: 980px) {
   .hero, .banner {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 3rem 5%;
   }
 
   .hero-text, .banner-text {
@@ -302,34 +339,76 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .produtos {
+    padding: 3rem 5%;
+  }
 }
 
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
   }
 
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
-}
 
-@media (max-width: 480px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text h1 {
+  .hero-text h1,
+  .banner-text h2 {
     font-size: 2rem;
   }
 
-  .btn-laranja, .btn-azul {
-    padding: 0.8rem 1.5rem;
+  .hero-text p,
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .btn-laranja,
+  .btn-azul {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
   }
 }
+
+@media (max-width: 480px) {
+  .categorias h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p,
+  .card-produto p {
+    font-size: 0.95rem;
+  }
+
+  .hero-text h1,
+  .banner-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero, .banner {
+    padding: 2rem 2%;
+  }
+
+  .coffe01 {
+    height: 30vh;
+  }
+
+  .coffee22 {
+    height: auto;
+  }
+}
+
+
