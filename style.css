@@ -1,13 +1,7 @@
-/* ==============================
-   COFFEE STATION – ESTILO CAFETERIA
-   Tons de marrom, bege e branco
-   ============================== */
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -20,10 +14,9 @@ body {
 /* ====================== HEADER ====================== */
 header {
   width: 100%;
-  padding: 1rem 5%;
-  background-color: #ffffff;
+  background-color: #fae4c8;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   position: sticky;
@@ -33,7 +26,8 @@ header {
 
 /* Logo */
 header img {
-  height: 9rem; /* proporcional */
+  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
+  height: auto; 
 }
 
 header img:hover {
@@ -55,7 +49,7 @@ nav a {
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 1s;
 }
 
 nav a:hover,
@@ -63,6 +57,13 @@ nav a.active {
   color: #ffffff;
   background-color: #b37a4c; /* marrom caramelo */
 }
+
+.colher01 img {
+   width: 100%;
+ height: 30vh;
+ 
+}
+
 /* HERO */
 .hero {
   display: grid;
