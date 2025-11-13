@@ -80,6 +80,8 @@ nav a.active {
 .hero-text h1 {
   font-size: 2.8rem;
   color: #ffffff; /* marrom café */
+  background-color: #3b1f1a67;
+  border-radius: 5px;
 }
 
 .hero-text p {
