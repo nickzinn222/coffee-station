@@ -118,6 +118,7 @@ nav a.active {
 
 /* ===== CATEGORIAS ===== */
 .categorias {
+  cursor: pointer;
   padding: 4rem 2rem;
   text-align: center;
   background-color: #f5efe6; /* bege claro de fundo */
