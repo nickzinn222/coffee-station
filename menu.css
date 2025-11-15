@@ -23,9 +23,11 @@ header {
   gap: 15px;
 }
 
+
 /* CORREÇÃO — aplica altura na imagem certa */
 header .logo img {
-  height: 200px;
+  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
+  height: 10rem; 
 }
 
 /* ====== NAV ====== */
