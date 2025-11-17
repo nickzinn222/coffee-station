@@ -42,7 +42,6 @@ img {
   display: block;
 }
 
-/* ====================== HEADER ====================== */
 header {
   background-color: #fff;
   display: flex;
@@ -85,11 +84,8 @@ nav ul li a:hover {
   background-color: #f5f0e1; /* bege */
   border-color: #5a3825; /* mantém a borda marrom */
 }
-/* HERO */
-=======
 
->>>>>>> Stashed changes
-/* ====================== HERO ====================== */
+
 .hero {
   text-align: center;
   padding: 4rem 5%;
