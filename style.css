@@ -44,31 +44,30 @@ header img:hover {
  height: auto;
 }
 
-/* Menu */
+/* ====== NAV ====== */
 nav ul {
-  border-bottom: black solid 1px;
   list-style: none;
   display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 1rem;
+  gap: 20px;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #6a4b3c; /* marrom médio */
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: color 1s;
+  color: #f5f0e1; /* bege */
+  background-color: #5a3825; /* marrom */
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid #5a3825;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  cursor: pointer;
 }
 
-nav a:hover,
-nav a.active {
-  color: #ffffff;
-  background-color: #b37a4c; /* marrom caramelo */
+nav ul li a:hover {
+  color: #5a3825; /* marrom */
+  background-color: #f5f0e1; /* bege */
+  border-color: #5a3825; /* mantém a borda marrom */
 }
-
 /* HERO */
 .hero {
   display: grid;

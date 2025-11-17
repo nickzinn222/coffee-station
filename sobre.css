@@ -31,25 +31,31 @@ header {
   height: 150px;
 }
 
+/* ====== NAV ====== */
 nav ul {
-  display: flex;
   list-style: none;
-  gap: 2rem;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #44312e;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: 0.3s;
+  color: #f5f0e1; /* bege */
+  background-color: #5a3825; /* marrom */
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid #5a3825;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  color: #5a3825; /* marrom */
+  background-color: #f5f0e1; /* bege */
+  border-color: #5a3825; /* mantém a borda marrom */
 }
-
+/* HERO */
 /* ========================= SOBRE NÓS ========================= */
 
 .sobre {
