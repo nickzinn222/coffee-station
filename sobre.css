@@ -31,10 +31,7 @@ header {
   height: 150px;
 }
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 /* ====== NAV ====== */
 nav ul {
   list-style: none;
@@ -59,7 +56,6 @@ nav ul li a:hover {
   background-color: #f5f0e1; /* bege */
   border-color: #5a3825; /* mantém a borda marrom */
 }
-/* HERO */
 /* ========================= SOBRE NÓS ========================= */
 
 .sobre {
