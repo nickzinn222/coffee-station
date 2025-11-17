@@ -1,0 +1,223 @@
+/* ========================= RESET ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fffaf4;
+  color: #4b3b33;
+}
+
+/* ========================= HEADER ========================= */
+
+header {
+  width: 100%;
+  background: #fae4c8;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 150px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #44312e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+/* ========================= SOBRE NÓS ========================= */
+
+.sobre {
+  padding: 5rem 10%;
+  text-align: center;
+  background-color: #f7f3ee;
+  color: #4b3b33;
+}
+
+.sobre h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #3b1f1a;
+  font-weight: 600;
+}
+
+.sobre .descricao {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.2rem;
+  color: #5a3825;
+  background: #fae4c8;
+  padding: 1.2rem;
+  border-radius: 12px;
+  line-height: 1.8;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* ========================= MISSÃO, VISÃO, VALORES ========================= */
+
+.mvv {
+  padding: 4rem 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.mvv .card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid #d3b692;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.mvv .card:hover {
+  transform: translateY(-6px);
+}
+
+.mvv h2 {
+  font-size: 1.6rem;
+  color: #5a3825;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.mvv p {
+  font-size: 1rem;
+  color: #4b3b33;
+  line-height: 1.7;
+}
+
+/* VALORES — lista elegante */
+
+.valores ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.valores li {
+  background: #f7f3ee;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #b37a4c;
+  border-radius: 8px;
+  color: #4b3b33;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ========================= PRÁTICAS SUSTENTÁVEIS ========================= */
+
+.sustentabilidade {
+  background: #ffffff;
+  padding: 5rem 10%;
+  color: #4b3b33;
+}
+
+.sustentabilidade h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #3b1f1a;
+}
+
+.sustentabilidade .item {
+  background: #fae4c8;
+  border-radius: 14px;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  border-left: 6px solid #b37a4c;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.sustentabilidade h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #5a3825;
+}
+
+.sustentabilidade p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b3b33;
+}
+
+/* ========================= FOOTER ========================= */
+
+footer {
+  background: #fae4c8;
+  color: #3b1f1a;
+  text-align: center;
+  padding: 1.8rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* ========================= RESPONSIVIDADE ========================= */
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .sobre h1 {
+    font-size: 2.2rem;
+  }
+
+  .sobre .descricao {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+
+  .mvv {
+    padding: 3rem 5%;
+  }
+
+  .sustentabilidade {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 0.95rem;
+  }
+
+  .sobre h1 {
+    font-size: 1.9rem;
+  }
+
+  .mvv .card {
+    padding: 1.4rem;
+  }
+
+  .sustentabilidade .item {
+    padding: 1.2rem;
+  }
+}
