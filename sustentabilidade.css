@@ -12,37 +12,6 @@ body {
   line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ====================== HEADER ====================== */
-header {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header img {
-  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 10rem; 
-}
 
 /* ====== NAV ====== */
 nav ul {
@@ -68,7 +37,58 @@ nav ul li a:hover {
   background-color: #f5f0e1; /* bege */
   border-color: #5a3825; /* mantém a borda marrom */
 }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ====================== HEADER ====================== */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
+  height: 10rem; 
+}
+
+<<<<<<< Updated upstream
+/* ====== NAV ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5f0e1; /* bege */
+  background-color: #5a3825; /* marrom */
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid #5a3825;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #5a3825; /* marrom */
+  background-color: #f5f0e1; /* bege */
+  border-color: #5a3825; /* mantém a borda marrom */
+}
 /* HERO */
+=======
+
+>>>>>>> Stashed changes
 /* ====================== HERO ====================== */
 .hero {
   text-align: center;
