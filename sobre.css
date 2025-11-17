@@ -113,6 +113,12 @@ nav ul li a:hover {
   line-height: 1.7;
 }
 
+.borda{
+  border-radius: 15px;
+border-left: solid 4px #b37a4c;
+padding-left: 10px;
+}
+
 /* VALORES — lista elegante */
 
 .valores ul {
