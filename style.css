@@ -24,10 +24,24 @@ header {
   z-index: 100;
 }
 
+
+
+.menu-btn{
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu{
+  display: none;
+}
+
+
+
 /* Logo */
 header img {
   max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 10rem; 
+  height: 9rem; 
 }
 
 header img:hover {
@@ -39,10 +53,6 @@ header img:hover {
   padding: 0;
 }
 
-.colher{
-  width: 20%;
- height: auto;
-}
 
 /* ====== NAV ====== */
 nav ul {
@@ -86,7 +96,7 @@ nav ul li a:hover {
   font-size: 2.8rem;
   color: #ffffff; /* marrom café */
   background-color: #3b1f1a67;
-  border-radius: 5px;
+  border-radius: 40px;
 }
 
 .hero-text p {
@@ -396,6 +406,19 @@ footer {
     font-size: 1.5rem;
   }
 
+  .menu-btn{
+    display: flex;
+    margin-right: -3rem;
+  }
+
+  header [
+    
+  ]
+
+  .menu-desktop{
+    display: none;
+  }
+
   .card p,
   .card-produto p {
     font-size: 0.95rem;
@@ -418,5 +441,7 @@ footer {
     height: auto;
   }
 }
+
+
 
 
