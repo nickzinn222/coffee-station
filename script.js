@@ -1,3 +1,21 @@
+// Seleciona o botão do menu (ícone de hambúrguer) pelo ID definido no HTML
+const menuBtn = document.getElementById('menu-btn');
+
+// Seleciona o elemento de navegação (menu que será aberto/fechado)
+const navMenu = document.getElementById('nav-menu');
+
+// Dentro do botão, procura o elemento <i> (ícone da fonte Font Awesome)
+const menuIcon = menuBtn.querySelector('i');
+// querySelector() -> método reservado do JavaScript usado para buscar
+// o primeiro elemento que corresponde a um seletor CSS dentro de outro elemento.
+
+
+
+
+
+
+
+
 // 1 - Criar o menu hambúrguer (div e ícone) no HTML.
 
 // 2 - Fora do @media, aplicar display: none na div que guarda o ícone do hambúrguer 

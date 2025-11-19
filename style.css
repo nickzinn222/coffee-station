@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +5,11 @@
 }
 
 body {
-  background-color: #f7f3ee; /* bege claro */
-  color: #4b3b33; /* marrom suave */
+  background-color: #f7f3ee;
+  color: #4b3b33;
   line-height: 1.6;
 }
 
-/* ====================== HEADER ====================== */
 header {
   width: 100%;
   background-color: #fae4c8;
@@ -26,13 +24,13 @@ header {
 
 
 
-.menu-btn{
+.menu-btn {
   font-size: 3rem;
   display: none;
   cursor: pointer;
 }
 
-.nav-menu{
+.nav-menu {
   display: none;
 }
 
@@ -40,15 +38,17 @@ header {
 
 /* Logo */
 header img {
-  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 9rem; 
+  max-width: 100%;
+  /* Impede que a imagem ultrapasse a largura da seção */
+  height: 9rem;
 }
 
 header img:hover {
-  transform: scale(1.05); /* leve efeito */
+  transform: scale(1.05);
+  /* leve efeito */
 }
 
-.logo img{
+.logo img {
   border-bottom: black solid 1px;
   padding: 0;
 }
@@ -63,8 +63,10 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #f5f0e1; /* bege */
-  background-color: #5a3825; /* marrom */
+  color: #f5f0e1;
+  /* bege */
+  background-color: #5a3825;
+  /* marrom */
   font-weight: 600;
   padding: 6px 12px;
   border: 2px solid #5a3825;
@@ -74,10 +76,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #5a3825; /* marrom */
-  background-color: #f5f0e1; /* bege */
-  border-color: #5a3825; /* mantém a borda marrom */
+  color: #5a3825;
+  /* marrom */
+  background-color: #f5f0e1;
+  /* bege */
+  border-color: #5a3825;
+  /* mantém a borda marrom */
 }
+
 /* HERO */
 .hero {
   display: grid;
@@ -94,7 +100,8 @@ nav ul li a:hover {
 
 .hero-text h1 {
   font-size: 2.8rem;
-  color: #ffffff; /* marrom café */
+  color: #ffffff;
+  /* marrom café */
   background-color: #3b1f1a67;
   border-radius: 40px;
 }
@@ -130,14 +137,17 @@ nav ul li a:hover {
   cursor: pointer;
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f5efe6; /* bege claro de fundo */
-  color: #4a2c2a; /* marrom escuro */
+  background-color: #f5efe6;
+  /* bege claro de fundo */
+  color: #4a2c2a;
+  /* marrom escuro */
 }
 
 .categorias h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: #3b1f1a; /* marrom mais escuro para destaque */
+  color: #3b1f1a;
+  /* marrom mais escuro para destaque */
   font-weight: 600;
 }
 
@@ -150,12 +160,14 @@ nav ul li a:hover {
 
 /* ===== CARD ===== */
 .card {
-  background: #fff; /* branco para contraste */
+  background: #fff;
+  /* branco para contraste */
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(74, 44, 42, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #d3b692; /* bege suave na borda */
+  border: 1px solid #d3b692;
+  /* bege suave na borda */
 }
 
 .card:hover {
@@ -173,14 +185,16 @@ nav ul li a:hover {
 }
 
 .card:hover img {
-  transform: scale(1.05); /* zoom suave no hover */
+  transform: scale(1.05);
+  /* zoom suave no hover */
 }
 
 /* ===== TEXTO ===== */
 .card p {
   margin: 1rem 0;
   font-size: 1.1rem;
-  color: #4a2c2a; /* marrom escuro */
+  color: #4a2c2a;
+  /* marrom escuro */
   font-weight: 500;
 }
 
@@ -191,7 +205,8 @@ nav ul li a:hover {
   align-items: center;
   padding: 5rem 8%;
   gap: 3rem;
-  background: #6a4b3c; /* marrom escuro */
+  background: #6a4b3c;
+  /* marrom escuro */
   color: #ffffff;
 }
 
@@ -268,16 +283,17 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.coffe01{
- width: 100%;
- height: 42vh;
- }
- .cofee22{
+.coffe01 {
+  width: 100%;
+  height: 42vh;
+}
+
+.cofee22 {
   width: 100%;
   height: 100%;
-  object-fit:cover;
- 
- }
+  object-fit: cover;
+
+}
 
 /* FOOTER */
 footer {
@@ -341,15 +357,17 @@ footer {
   color: #eee0d0;
 }
 
-/* ====================== RESPONSIVO ====================== */
 @media (max-width: 980px) {
-  .hero, .banner {
+
+  .hero,
+  .banner {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 3rem 5%;
   }
 
-  .hero-text, .banner-text {
+  .hero-text,
+  .banner-text {
     padding: 1rem 0;
   }
 
@@ -367,51 +385,42 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+
   header {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
+    flex-direction: row-reverse;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-text h1,
-  .banner-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-text p,
-  .banner-text p {
-    font-size: 1rem;
-  }
-
-  .btn-laranja,
-  .btn-azul {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
   .categorias h2 {
     font-size: 1.5rem;
   }
 
-  .menu-btn{
-    display: flex;
-    margin-right: -3rem;
+  .nav-menu { 
+
+      position: absolute;
+      top: -30rem;
+      left: -2rem;
+      width: 100%;
+      height: 30vh;
+      background-color: black;
+      transition: top 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
   }
 
-  .menu-desktop{
+  .show{
+    top: 90px;
+    left: -2rem;
+  }
+
+  .menu-btn {
+    display: flex;
+    margin-right: -1rem;
+  }
+
+  .menu-desktop {
     display: none;
   }
 
@@ -425,7 +434,8 @@ footer {
     font-size: 1.6rem;
   }
 
-  .hero, .banner {
+  .hero,
+  .banner {
     padding: 2rem 2%;
   }
 
@@ -437,7 +447,3 @@ footer {
     height: auto;
   }
 }
-
-
-
-
