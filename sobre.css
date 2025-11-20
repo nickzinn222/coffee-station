@@ -241,7 +241,7 @@ footer {
   }
 
   .show{
-    top: 140px;
+    top: 150px;
     left: 0rem;
   }
 
@@ -257,11 +257,17 @@ footer {
   display: none;
 }
 
+.ul-list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
 
-
-
+header {
+  flex-direction: row-reverse;
+}
 
 
 

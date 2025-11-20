@@ -26,6 +26,7 @@ body {
   display: none;
 }
 
+
 .menu-btn {
   font-size: 3rem;
   display: none;
@@ -189,6 +190,9 @@ body {
 @media (max-width: 768px) {
  
 
+
+  
+
 .nav-menu { 
 
       position: absolute;
@@ -230,11 +234,18 @@ body {
     cursor: pointer;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 
 
-
-
-
+ 
+.ul-list2 {
+  display: flex;
+  gap: 15px;
+  
+}
 
 
 
