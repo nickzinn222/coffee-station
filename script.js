@@ -56,3 +56,13 @@ menuBtn.addEventListener('click', () => {
 // 5 - Realizar a estilização do menu mobile no CSS: alinhamento, cores, transições etc.
 
 // 6 - Fazer o JavaScript interagir com o ícone do menu hambúrguer e executar a ação.
+
+
+const typed = new Typed (".auto-type",{
+    strings: ["O sabor do café com consciência"],
+    typeSpeed: 80,
+    backSpeed: 60,
+    backDelay: 1200,      // pausa antes de apagar
+    loop: true,
+    showCursor: false  // Oculta o cursor de digitação
+} );

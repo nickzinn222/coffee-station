@@ -85,7 +85,7 @@ nav ul li a:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  padding: 5rem 8%;
+  padding: 7rem 8%;
   background-image: url(img/banner\ placa\ coffe\ station\ 2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -93,15 +93,22 @@ nav ul li a:hover {
 
 }
 
+.auto-type{
+color: #ffffff;
+font-size: 1.3rem;
+background-color: #3b1f1a67;
+border-radius: 40px;
+padding: 1rem;
+}
+
 .hero-text h1 {
   font-size: 2.8rem;
   color: #ffffff;
-  /* marrom café */
-  background-color: #3b1f1a67;
+  background-color: #00000067;
   border-radius: 40px;
 }
 
-.hero-text p {
+.text  {
   margin: 1.2rem 0;
   font-size: 1.1rem;
   color: #ffffff;
@@ -430,10 +437,6 @@ footer {
     font-size: 1.6rem;
   }
 
-  .hero,
-  .banner {
-    padding: 2rem 2%;
-  }
 
   .coffe01 {
     height: 30vh;
