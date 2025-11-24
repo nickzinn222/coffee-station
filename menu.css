@@ -15,6 +15,7 @@ body {
 
 /* ====== HEADER ====== */
 header {
+  background-color: #fae4c8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -43,7 +44,7 @@ header {
 /* CORREÇÃO — aplica altura na imagem certa */
 header .logo img {
   max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 10rem; 
+  height: 20rem; 
 }
 
 /* ====== NAV ====== */
@@ -187,7 +188,7 @@ nav ul li a:hover {
 /* ====== Telas até 900px ====== */
 @media (max-width: 900px) {
   header .logo img {
-    height: 55px;
+    height: 130px;
   }
 
   .menu-item img {
@@ -203,6 +204,7 @@ nav ul li a:hover {
 
       position: absolute;
       top: -30rem;
+      z-index: 9999;
       left: -2rem;
       width: 100%;
       height: 30vh;
@@ -215,7 +217,7 @@ nav ul li a:hover {
   }
 
   .show{
-    top: 140px;
+    top: 130px;
     left: 0rem;
   }
 
@@ -223,12 +225,14 @@ nav ul li a:hover {
     display: none;
     display: flex;
     margin-right: -1rem;
+
   }
 
 
   .ul-list2 {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
   }
 
@@ -244,13 +248,9 @@ nav ul li a:hover {
   display: none;
 }
 
-
-
-
-
   
   header {
-    flex-direction: column;
+    flex-direction: row-reverse;
     text-align: center;
   }
 

@@ -360,7 +360,7 @@ footer {
   color: #eee0d0;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 480px) {
 
   .hero,
   .banner {

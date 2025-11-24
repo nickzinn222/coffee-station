@@ -7,76 +7,19 @@
 }
 
 body {
-  background-color: #f5f0e6; /* bege claro */
+  background-color: #fae4c8; /* bege claro */
   color: #5a3825; /* marrom escuro */
   line-height: 1.6;
 }
 
-
-
-
-.menu-btn {
-  font-size: 3rem;
-  display: none;
-  cursor: pointer;
-}
-
-.nav-menu {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====== NAV ====== */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #f5f0e1; /* bege */
-  background-color: #5a3825; /* marrom */
-  font-weight: 600;
-  padding: 6px 12px;
-  border: 2px solid #5a3825;
-  border-radius: 8px;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  
- 
-}
-
-nav ul li a:hover {
-  color: #5a3825; /* marrom */
-  background-color: #f5f0e1; /* bege */
-  border-color: #5a3825; /* mantém a borda marrom */
-}
 img {
   max-width: 100%;
   display: block;
 }
 
+/* ====================== HEADER ====================== */
 header {
-  background-color: #fff;
+  background-color: #fae4c8; /* COR CORRIGIDA */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,11 +31,21 @@ header {
 }
 
 header img {
-  max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 10rem; 
+  max-width: 100%;
+  height: 10rem;
 }
 
-/* ====== NAV ====== */
+.menu-btn {
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* ====================== NAV ====================== */
 nav ul {
   list-style: none;
   display: flex;
@@ -114,10 +67,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #5a3825; /* marrom */
   background-color: #f5f0e1; /* bege */
-  border-color: #5a3825; /* mantém a borda marrom */
+  border-color: #5a3825;
 }
 
-
+/* ====================== HERO ====================== */
 .hero {
   text-align: center;
   padding: 4rem 5%;
@@ -251,12 +204,10 @@ footer {
 /* ====================== RESPONSIVIDADE ====================== */
 @media (max-width: 768px) {
 
-
-.nav-menu { 
-
+  .nav-menu { 
       position: absolute;
       top: -30rem;
-      left: 0rem;
+      left: 0;
       width: 100%;
       height: 40vh;
       background-color: #fae4c8;
@@ -264,22 +215,16 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      
   }
 
-  .show{
+  .show {
     top: 190px;
-    left: 0rem;
-    
   }
 
-
- .ul-list2 {
-  display: flex;
-  flex-direction: column;
- }
-
-  
+  .ul-list2 {
+    display: flex;
+    flex-direction: column;
+  }
 
   .menu-btn {
     display: flex;
@@ -289,22 +234,6 @@ footer {
   .menu {
     display: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .como-funciona .cards {
     flex-direction: column;
