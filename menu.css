@@ -44,7 +44,7 @@ header {
 /* CORREÇÃO — aplica altura na imagem certa */
 header .logo img {
   max-width: 100%;    /* Impede que a imagem ultrapasse a largura da seção */
-  height: 20rem; 
+  height: 10rem; 
 }
 
 /* ====== NAV ====== */
