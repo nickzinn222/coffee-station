@@ -411,7 +411,7 @@ footer {
       position: absolute;
       top: -30rem;
       left: 0rem;
-      width: 100%;
+      width: 90%;
       height: 30vh;
       background-color: #fae4c8;
       transition: top 0.3s ease-in-out;
