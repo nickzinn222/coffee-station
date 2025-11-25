@@ -3,7 +3,12 @@
    Sustentável, aconchegante e moderno
    ============================= */
 
+* {
+  padding: 0;
+}
+
 body {
+ 
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f5efe6;
