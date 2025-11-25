@@ -6,8 +6,10 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5efe6; /* bege claro */
-  color: #3e2c23; /* marrom suave */
+  background-color: #f5efe6;
+  /* bege claro */
+  color: #3e2c23;
+  /* marrom suave */
 }
 
 /* ===== CABEÇALHO ===== */
@@ -22,7 +24,7 @@ body {
   z-index: 999;
 }
 
-.nav-menu { 
+.nav-menu {
   display: none;
 }
 
@@ -188,8 +190,6 @@ body {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
- 
-
 
   nav ul li a {
     text-decoration: none;
@@ -201,6 +201,8 @@ body {
     border-radius: 8px;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
   }
 
   nav ul {
@@ -209,16 +211,10 @@ body {
   }
 
 
- 
-.ul-list2 {
-  display: flex;
-  gap: 15px;
-}
-
-
-
-
-
+  .ul-list2 {
+    display: flex;
+    gap: 15px;
+  }
 
   .coffee-form {
     padding: 25px;
